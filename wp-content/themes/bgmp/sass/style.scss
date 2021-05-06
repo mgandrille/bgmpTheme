@@ -77,11 +77,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
 
 /*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
-
-/*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
 
@@ -100,3 +95,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Main Site
+--------------------------------------------------------------*/
+@import "site/header";
+

@@ -9,6 +9,7 @@ wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
 wp-config-sample.php
+wp-config.php
 wp-cron.php
 wp-links-opml.php
 wp-load.php
@@ -18,10 +19,13 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+.htaccess
 
 # ignore everything in the "wp-content" directory
 # ignore all languages
 wp-content/languages
+wp-content/upgrade
+wp-content/uploads
 
 # ignore all plugins
 wp-content/plugins

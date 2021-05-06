@@ -140,10 +140,16 @@ add_action( 'widgets_init', 'bgmp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bgmp_scripts() {
+	wp_enqueue_style( 'bootstrap-style', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'fontawsome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'bgmp-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'bgmp-style', 'rtl', 'replace' );
+	// wp_style_add_data( 'bgmp-style', 'rtl', 'replace' );
 
+	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'popper', "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" , array('jquery'), _S_VERSION, true );
+	wp_enqueue_script( 'bootstrap-script', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", array('jquery', 'popper'), _S_VERSION, true );
 	wp_enqueue_script( 'bgmp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	// wp_enqueue_script( 'bgmp-js', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

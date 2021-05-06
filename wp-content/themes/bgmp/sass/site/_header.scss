@@ -1,0 +1,106 @@
+#masthead {
+    width: 100%;
+    background: $color__bgmp-blue;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-branding {
+        p {
+            margin: 0;
+            font-size: .8rem;
+
+            @media (min-width: 768px) {
+                font-size: 1rem;
+            }
+
+        }
+        .site-title {
+            margin-bottom: -.7rem;
+            p {
+                color: $color__bgmp-grey;
+            }
+            a {
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: $font__atma;
+                color: $color__bgmp-grey;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $color__bgmp-pink;
+                }
+            }
+
+            @media (min-width: 768px) {
+                margin-bottom: -1rem;
+                a {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    .site-branding,
+    #site-navigation {
+        flex: 0 0 50%;
+    }
+
+    #site-navigation {
+        #primary-menu {
+            justify-content: space-around;
+
+            li {
+                a {
+                    color: $color__bgmp-pink;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                    border-bottom: 3px solid transparent;
+
+                    &:hover {
+                        border-bottom-color: $color__bgmp-pink;
+                    }
+                }
+            }
+        }
+
+        button {
+            float: right;
+            background: none;
+            border: none;
+            outline: none;
+            color: $color__bgmp-grey;
+            font-size: 2rem;
+        }
+
+        &.toggled {
+            .menu-menu-principal-container {
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                left: 0;
+                top: 12vh;
+                text-align: center;
+                background: $color__bgmp-blue;
+
+                ul {
+                    margin-top: 2rem;
+
+                    li {
+                        a {
+                            &:hover {
+                                border-bottom-color: transparent !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
