@@ -803,6 +803,157 @@ textarea {
 	flex: 1 0 50%;
 }
 
+/* FOOTER */
+footer {
+	margin-bottom: 1.5rem;
+}
+
+footer .row {
+	justify-content: center;
+	align-items: center;
+}
+
+footer .row .logo {
+	text-align: center;
+}
+
+footer .row .logo a img {
+	width: 200px;
+}
+
+footer .row .search {
+	text-align: center;
+}
+
+footer .row .search .search-submit {
+	background: none;
+	font-size: 1.2rem;
+	padding: 0;
+	border: none;
+	line-height: 2rem;
+	transition: 0.3s;
+}
+
+footer .row .search .search-submit:hover {
+	font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+	footer .row .search {
+		text-align: left;
+	}
+}
+
+footer a,
+footer a:visited {
+	color: #595959;
+}
+
+footer a:hover,
+footer a:visited:hover {
+	text-decoration: none;
+	color: #bd22b5;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	display: block;
+	background: none;
+	font-size: .8rem;
+	text-align: center;
+}
+
+footer .contact-us {
+	border-color: #595959;
+}
+
+footer .contact-us:hover {
+	background: #bd22b5;
+	border-color: #bd22b5;
+	color: #FFF;
+	transition: 0.3s;
+}
+
+footer .contact-us:hover > a {
+	color: #FFF;
+}
+
+footer .social-network p {
+	text-align: center;
+	color: #6dc4b8;
+	margin-bottom: .8rem;
+	font-weight: 700;
+}
+
+footer .social-network .row {
+	text-align: center;
+}
+
+footer .social-network .row i {
+	font-size: 2rem;
+	color: rgba(89, 89, 89, 0.6);
+}
+
+footer .social-network .row i:hover {
+	transition: 0.3s;
+}
+
+footer .social-network .row i.fa-facebook:hover {
+	color: #3b5998;
+}
+
+footer .social-network .row i.fa-instagram {
+	border-radius: 10px;
+	padding: 0 2px;
+}
+
+footer .social-network .row i.fa-instagram:hover {
+	background: linear-gradient(to top right, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+	background: -webkit-linear-gradient(to top right, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+	background: -moz-linear-gradient(to top right, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+	color: white;
+}
+
+footer .social-network .row i.fa-linkedin:hover {
+	color: #0e76a8;
+}
+
+footer .social-network .row i.fa-twitter:hover {
+	color: #1DA1F2;
+}
+
+footer .social-network .row i.fa-github:hover {
+	color: #333;
+}
+
+@media (max-width: 768px) {
+	footer .logo,
+	footer .contact-us,
+	footer .social-network {
+		margin: .5rem auto;
+	}
+}
+
+footer .mentions {
+	margin-top: 2rem;
+	color: #595959;
+	font-size: .8rem;
+}
+
+footer .mentions .copy {
+	text-align: right;
+}
+
+@media (max-width: 968px) {
+	footer .mentions .col-12 {
+		text-align: center;
+	}
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
