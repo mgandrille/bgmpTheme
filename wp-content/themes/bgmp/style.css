@@ -829,6 +829,11 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
+main {
+	background: #f5efe0;
+	margin-top: 10vh;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
