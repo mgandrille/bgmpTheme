@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 
     .site-branding {
         p {
@@ -32,7 +33,7 @@
 
                 &:hover {
                     text-decoration: none;
-                    color: $color__bgmp-pink;
+                    color: $color__bgmp-purple;
                 }
             }
 
@@ -56,7 +57,7 @@
 
             li {
                 a {
-                    color: $color__bgmp-pink;
+                    color: $color__bgmp-purple;
                     text-transform: uppercase;
                     font-weight: 700;
                     font-size: 1.1rem;
@@ -64,7 +65,7 @@
                     border-bottom: 3px solid transparent;
 
                     &:hover {
-                        border-bottom-color: $color__bgmp-pink;
+                        border-bottom-color: $color__bgmp-purple;
                     }
                 }
             }

@@ -9,7 +9,14 @@
 
 ( function( $ ) {
 	$( document ).ready( function( event ) {
-		console.log( 'MAiN SCRIPT' );
 		$( 'input.search-submit' ).attr( 'value', '🔍' );
+
+		$( '.i-down' ).click( function() {
+			const header = $( '#masthead' ).height();
+			const pos = $( '#portfolio' ).offset().top;
+			$( 'html, body' ).animate( {
+				scrollTop: eval( pos - header - 30 ),
+			}, 2000 );
+		} );
 	} );
 }( jQuery ) );

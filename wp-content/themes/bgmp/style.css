@@ -982,7 +982,13 @@ footer .mentions .copy {
 
 main {
 	background: #f5efe0;
-	margin-top: 10vh;
+	margin-top: 7vh;
+}
+
+@media (min-width: 768px) {
+	main {
+		margin-top: 10vh;
+	}
 }
 
 /* Comments
@@ -1105,6 +1111,7 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 100;
 }
 
 #masthead .site-branding p {
@@ -1135,7 +1142,7 @@ main {
 
 #masthead .site-branding .site-title a:hover {
 	text-decoration: none;
-	color: #bd22b5;
+	color: #7f0a79;
 }
 
 @media (min-width: 768px) {
@@ -1157,7 +1164,7 @@ main {
 }
 
 #masthead #site-navigation #primary-menu li a {
-	color: #bd22b5;
+	color: #7f0a79;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.1rem;
@@ -1166,7 +1173,7 @@ main {
 }
 
 #masthead #site-navigation #primary-menu li a:hover {
-	border-bottom-color: #bd22b5;
+	border-bottom-color: #7f0a79;
 }
 
 #masthead #site-navigation button {
@@ -1194,6 +1201,80 @@ main {
 
 #masthead #site-navigation.toggled .menu-menu-principal-container ul li a:hover {
 	border-bottom-color: transparent !important;
+}
+
+section {
+	padding: 4rem 1rem;
+}
+
+section#presentation {
+	height: 86vh;
+	background: url("./assets/img/sky.jpeg") center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: soft-light;
+}
+
+section#presentation .container {
+	padding: 2rem;
+}
+
+section#presentation .container p {
+	text-align: center;
+}
+
+section#presentation .i-down {
+	font-size: 2rem;
+	position: absolute;
+	width: fit-content;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#presentation .i-down:hover {
+	cursor: pointer;
+}
+
+section h1 {
+	width: fit-content;
+	margin: 1.5rem auto;
+	padding-left: 5.5rem;
+	padding-top: 1rem;
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: 700;
+	color: #6dc4b8;
+	background: url("./assets/img/triangle.png") no-repeat;
+	background-position: left;
+	background-size: 5rem;
+}
+
+section h1 span {
+	display: block;
+	margin-top: -2rem;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
+	color: #595959;
+}
+
+@media (min-width: 768px) {
+	section h1 {
+		text-align: center;
+		margin: 3rem auto;
+		padding-left: 4rem;
+		padding-top: 0;
+		line-height: initial;
+		background-size: 4rem;
+	}
+	section h1 span {
+		display: initial;
+		margin-top: 0;
+		font-size: 1.5rem;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
