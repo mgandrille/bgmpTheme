@@ -147,6 +147,7 @@ footer {
 	a,
 	a:visited {
 		color: $color__bgmp-grey;
+		transition: 0.3s;
 
 		&:hover {
 			text-decoration: none;
@@ -167,12 +168,12 @@ footer {
 
 	.contact-us {
 		border-color: $color__bgmp-grey;
+		transition: 0.7s;
 
 		&:hover {
 			background: $color__bgmp-pink;
 			border-color: $color__bgmp-pink;
 			color: #FFF;
-			transition: 0.3s;
 
 			& > a {
 				color: #FFF;
@@ -192,9 +193,7 @@ footer {
 			i {
 				font-size: 2rem;
 				color: rgba($color__bgmp-grey, .6);
-				&:hover {
-					transition: 0.3s;
-				}
+				transition: 0.5s;
 				&.fa-facebook:hover {
 					color: #3b5998;
 				}

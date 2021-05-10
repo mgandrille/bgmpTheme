@@ -34,6 +34,7 @@
                 &:hover {
                     text-decoration: none;
                     color: $color__bgmp-purple;
+                    transition: 0.3s;
                 }
             }
 
@@ -66,6 +67,7 @@
 
                     &:hover {
                         border-bottom-color: $color__bgmp-purple;
+                        transition: 0.3s;
                     }
                 }
             }
@@ -97,6 +99,7 @@
                         a {
                             &:hover {
                                 border-bottom-color: transparent !important;
+                                transition: 0.3s;
                             }
                         }
                     }

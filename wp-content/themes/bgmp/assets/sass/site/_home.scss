@@ -96,6 +96,8 @@ section {
             color: $color__bgmp-blue;
             font-weight: 600;
             border: 2px solid $color__bgmp-blue;
+            border-radius: initial;
+            transition: 0.7s;
 
             &:hover {
                 background: $color__bgmp-purple;
@@ -119,13 +121,17 @@ section {
             margin: 2rem auto;
         }
 
-        a:hover {
-            text-decoration: none;
+        a {
+            transition: 0.3s;
+            &:hover {
+                text-decoration: none;
+            }
         }
 
         span {
             font-weight: 700;
             color: $color__bgmp-purple;
+            transition: 0.3s;
 
             &:hover {
                 color: $color__bgmp-pink;
