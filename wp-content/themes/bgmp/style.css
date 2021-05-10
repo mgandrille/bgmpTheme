@@ -401,6 +401,7 @@ h5, .h5,
 h6, .h6 {
 	clear: both;
 	font-family: "Atma", cursive;
+	font-weight: 700;
 }
 
 p {
@@ -1215,6 +1216,12 @@ section#presentation {
 	background-blend-mode: soft-light;
 }
 
+@media (min-width: 768px) {
+	section#presentation {
+		height: 90vh;
+	}
+}
+
 section#presentation .container {
 	padding: 2rem;
 }
@@ -1245,7 +1252,6 @@ section h1 {
 	padding-top: 1rem;
 	font-size: 3rem;
 	line-height: 4rem;
-	font-weight: 700;
 	color: #6dc4b8;
 	background: url("./assets/img/triangle.png") no-repeat;
 	background-position: left;
@@ -1264,7 +1270,7 @@ section h1 span {
 @media (min-width: 768px) {
 	section h1 {
 		text-align: center;
-		margin: 3rem auto;
+		margin: 4rem auto;
 		padding-left: 4rem;
 		padding-top: 0;
 		line-height: initial;
@@ -1275,6 +1281,61 @@ section h1 span {
 		margin-top: 0;
 		font-size: 1.5rem;
 	}
+}
+
+section#description h2 {
+	display: none;
+}
+
+section#portfolio h2, section#contact h2 {
+	color: #6dc4b8;
+}
+
+section#portfolio {
+	background: white;
+}
+
+section#portfolio .btn {
+	margin: 2rem auto;
+	padding: .5rem 3rem;
+	text-transform: uppercase;
+	color: #6dc4b8;
+	font-weight: 600;
+	border: 2px solid #6dc4b8;
+}
+
+section#portfolio .btn:hover {
+	background: #7f0a79;
+	color: #FFF;
+	border-color: #7f0a79;
+}
+
+section#blog {
+	height: 50vh;
+	background: url("./assets/img/water.jpg") center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: soft-light;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.25);
+	/* white background with opacity */
+}
+
+section#blog h2 {
+	color: #7f0a79;
+}
+
+section#blog a:hover {
+	text-decoration: none;
+}
+
+section#blog span {
+	font-weight: 700;
+	color: #7f0a79;
+}
+
+section#blog span:hover {
+	color: #bd22b5;
 }
 
 /*# sourceMappingURL=style.css.map */

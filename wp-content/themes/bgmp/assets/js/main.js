@@ -13,7 +13,7 @@
 
 		$( '.i-down' ).click( function() {
 			const header = $( '#masthead' ).height();
-			const pos = $( '#portfolio' ).offset().top;
+			const pos = $( '#description' ).offset().top;
 			$( 'html, body' ).animate( {
 				scrollTop: eval( pos - header - 30 ),
 			}, 2000 );
