@@ -18,6 +18,7 @@ textarea {
 	border: 1px solid $color__border-input;
 	border-radius: 3px;
 	padding: 3px;
+	width: 100%;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -30,4 +31,40 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+
+
+/*** CONTACT FORM 7 PLUGIN ***/
+.wpcf7-form-control {
+	background: none;
+	border: none !important;
+	border-radius: 0 !important;
+	border-bottom: 2px solid $color__bgmp-blue !important;
+
+	&:focus {
+		border: none;
+		background: #FFF;
+		outline: none;
+	}
+}
+
+.wpcf7-textarea {
+    height: 8rem;
+	border-right: 2px solid #6dc4b8 !important;
+}
+
+.wpcf7-submit {
+	background: none !important;
+	border: 2px solid $color__bgmp-blue !important;
+	color: $color__bgmp-blue !important;
+	text-transform: uppercase;
+	margin: 2rem auto;
+	padding: .5rem 3rem !important;
+	font-weight: 600;
+	&:hover {
+		background: $color__bgmp-purple !important;
+		color: #FFF !important;
+		border-color: $color__bgmp-purple !important;
+	}
 }

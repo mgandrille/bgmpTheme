@@ -59,7 +59,14 @@ get_header();
         <section id="contact">
             <div class="container">
                 <h2>Prendre contact</h2>
-                <?php the_content(); ?>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/img/contact.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -591,6 +591,7 @@ textarea {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
+	width: 100%;
 }
 
 input[type="text"]:focus,
@@ -618,6 +619,41 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+/*** CONTACT FORM 7 PLUGIN ***/
+.wpcf7-form-control {
+	background: none;
+	border: none !important;
+	border-radius: 0 !important;
+	border-bottom: 2px solid #6dc4b8 !important;
+}
+
+.wpcf7-form-control:focus {
+	border: none;
+	background: #FFF;
+	outline: none;
+}
+
+.wpcf7-textarea {
+	height: 8rem;
+	border-right: 2px solid #6dc4b8 !important;
+}
+
+.wpcf7-submit {
+	background: none !important;
+	border: 2px solid #6dc4b8 !important;
+	color: #6dc4b8 !important;
+	text-transform: uppercase;
+	margin: 2rem auto;
+	padding: .5rem 3rem !important;
+	font-weight: 600;
+}
+
+.wpcf7-submit:hover {
+	background: #7f0a79 !important;
+	color: #FFF !important;
+	border-color: #7f0a79 !important;
 }
 
 /*--------------------------------------------------------------
@@ -1289,6 +1325,7 @@ section#description h2 {
 
 section#portfolio h2, section#contact h2 {
 	color: #6dc4b8;
+	margin: 2rem auto;
 }
 
 section#portfolio {
@@ -1323,6 +1360,7 @@ section#blog {
 
 section#blog h2 {
 	color: #7f0a79;
+	margin: 2rem auto;
 }
 
 section#blog a:hover {
@@ -1336,6 +1374,11 @@ section#blog span {
 
 section#blog span:hover {
 	color: #bd22b5;
+}
+
+section#contact img {
+	display: block;
+	width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
