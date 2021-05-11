@@ -14,18 +14,20 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php bgmp_post_thumbnail(); ?>
+	<div class="container">
+		<?php bgmp_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+		<div class="entry-content">
+			<?php
+			the_content();
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bgmp' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bgmp' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
+		</div><!-- .entry-content -->
+	</div><!-- .container -->
 </article><!-- #post-<?php the_ID(); ?> -->

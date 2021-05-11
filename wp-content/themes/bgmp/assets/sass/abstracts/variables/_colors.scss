@@ -1,3 +1,11 @@
+/** CUSTOM COLORS **/
+$color__bgmp-blue: #6dc4b8;
+$color__bgmp-purple: #7f0a79;
+$color__bgmp-wheat: #f5efe0;
+$color__bgmp-grey: #595959;
+$color__bgmp-pink: #bd22b5;
+
+/** MAIN COLORS **/
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -8,9 +16,9 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: #4169e1; //royalblue
-$color__link-visited: #800080; //purple
-$color__link-hover: #191970; //midnightblue
+$color__link: $color__bgmp-pink;
+$color__link-visited: $color__link;
+$color__link-hover: $color__bgmp-purple;
 $color__text-main: #404040;
 
 $color__border-button: #ccc #ccc #bbb;
@@ -18,9 +26,3 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
-
-$color__bgmp-blue: #6dc4b8;
-$color__bgmp-purple: #7f0a79;
-$color__bgmp-wheat: #f5efe0;
-$color__bgmp-grey: #595959;
-$color__bgmp-pink: #bd22b5;

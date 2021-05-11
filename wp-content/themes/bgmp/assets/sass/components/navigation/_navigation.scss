@@ -91,11 +91,17 @@
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 1.5em;
+		margin: 3rem 0;
 	}
 
 	.nav-links {
 		display: flex;
+		font-weight: 700;
+		font-size: 1.2rem;
+
+		.nav-title {
+			padding: 0 .5rem;
+		}
 	}
 
 	.nav-previous {

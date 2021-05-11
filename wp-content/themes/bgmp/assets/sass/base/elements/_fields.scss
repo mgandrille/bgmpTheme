@@ -70,3 +70,14 @@ textarea {
 		border-color: $color__bgmp-purple !important;
 	}
 }
+
+.page {
+	.wp-block-contact-form-7-contact-form-selector {
+		padding: 1rem;
+		border: 3px solid #FFF;
+
+		@media (min-width: 768px) {
+			padding: 2rem 4rem;
+		}
+	}
+}
