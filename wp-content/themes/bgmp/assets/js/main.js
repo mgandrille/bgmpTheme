@@ -20,7 +20,7 @@
 		} );
 
 		/**
-		 * Smooth scrolling effect
+		 * Smooth scrolling effect for anchors
 		 */
 		$( document ).ready( function() {
 			// Add smooth scrolling to all links

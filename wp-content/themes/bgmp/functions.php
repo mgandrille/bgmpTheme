@@ -184,3 +184,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/**
+ * CUSTOM POST TYPES
+ */
+require get_template_directory() . '/inc/cpt/portfolio.php';

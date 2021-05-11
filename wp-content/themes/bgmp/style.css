@@ -1093,29 +1093,34 @@ main {
 	margin-top: 2rem;
 }
 
-.entry-header {
+.entry-header,
+.page-header {
 	background: #6dc4b8;
 	text-align: center;
 	padding: 3.5rem 1rem;
 }
 
-.entry-header .entry-categories a {
+.entry-header .entry-categories a,
+.page-header .entry-categories a {
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 0 1rem;
 }
 
-.entry-header .entry-meta span {
+.entry-header .entry-meta span,
+.page-header .entry-meta span {
 	padding: 0 .7rem;
 	display: inline-block;
 	color: #595959;
 }
 
-.entry-header .entry-meta span.author {
+.entry-header .entry-meta span.author,
+.page-header .entry-meta span.author {
 	padding: initial;
 }
 
-.entry-header .entry-meta span a {
+.entry-header .entry-meta span a,
+.page-header .entry-meta span a {
 	color: #595959;
 }
 
@@ -1218,6 +1223,43 @@ main {
 
 #comments {
 	padding-top: 3rem;
+}
+
+.portfolios_page {
+	position: relative;
+	height: 350px;
+	max-height: 350px;
+	margin: 1rem auto;
+}
+
+.portfolios_page a img {
+	display: block;
+	height: 100%;
+}
+
+.portfolios_page a:hover .overlay {
+	height: 100%;
+}
+
+.portfolios_page .overlay {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+	width: 92.3%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.portfolios_page .overlay .entry-title {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 /* Comments
