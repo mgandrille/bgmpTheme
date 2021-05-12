@@ -1262,6 +1262,24 @@ main {
 	text-align: center;
 }
 
+.single-portfolios_page .tech ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.single-portfolios_page .tech ul li {
+	display: inline-block;
+	padding: .5rem;
+	vertical-align: middle;
+}
+
+.single-portfolios_page .tech ul li img {
+	display: block;
+	width: 120px;
+	background: #FFF;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -1367,6 +1385,114 @@ main {
 
 .gallery-caption {
 	display: block;
+}
+
+.carousel-image:hover {
+	cursor: pointer;
+}
+
+/**** CAROUSEL CUSTOM NAVIGATION BUTTONS ****/
+.carousel-dots, .slider .slick-custom-dots li {
+	position: relative;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+	background-color: transparent;
+	opacity: 1;
+}
+
+.carousel-dots:hover, .slider .slick-custom-dots li:hover {
+	background-color: white;
+}
+
+.carousel-dots.active, .slider .slick-custom-dots li.active, .carousel-dots.slick-active, .slider .slick-custom-dots li.slick-active {
+	background-color: #7f0a79;
+}
+
+/**** SLICK SLIDER ****/
+.slider {
+	height: 180px;
+	text-align: center;
+}
+
+.slider, .slider .slick-track, .slider .slick-list {
+	height: 100% !important;
+}
+
+.slider .slick-prev, .slider .slick-next {
+	width: 20px;
+	height: 39px;
+	background-size: 20px 39px;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	color: transparent;
+	border: none;
+	outline: transparent;
+}
+
+.slider .slick-prev:before, .slider .slick-next:before {
+	content: "";
+}
+
+.slider .slick-prev:hover, .slider .slick-prev:focus, .slider .slick-next:hover, .slider .slick-next:focus {
+	background: transparent;
+	background-size: 20px 39px;
+	color: transparent;
+}
+
+.slider .slick-prev:hover:before, .slider .slick-prev:focus:before, .slider .slick-next:hover:before, .slider .slick-next:focus:before {
+	content: "";
+	opacity: 1;
+}
+
+@media (max-width: 768px) {
+	.slider .slick-prev, .slider .slick-next {
+		width: 10px;
+		height: 20px;
+		background-size: 12px 20px !important;
+	}
+}
+
+.slider .slick-prev {
+	left: 25px;
+}
+
+.slider .slick-next {
+	right: 25px;
+}
+
+.slider .slick-slide {
+	height: 100%;
+	min-height: 600px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+	.slider .slick-slide {
+		min-height: 400px;
+	}
+}
+
+@media (max-width: 500px) {
+	.slider .slick-slide {
+		min-height: 250px;
+	}
+}
+
+.slider .slick-custom-dots {
+	margin-top: -2rem;
+}
+
+.slider .slick-custom-dots button {
+	visibility: hidden;
 }
 
 /*--------------------------------------------------------------

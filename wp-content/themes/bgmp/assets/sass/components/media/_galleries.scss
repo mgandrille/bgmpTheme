@@ -21,3 +21,125 @@
 .gallery-caption {
 	display: block;
 }
+
+
+.carousel-image {
+    &:hover {
+        cursor:pointer;
+    }
+}
+
+/**** CAROUSEL CUSTOM NAVIGATION BUTTONS ****/
+.carousel-dots {
+    position: relative;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    opacity: 1;
+
+    &:hover {
+        background-color: white;
+    }
+
+    &.active, &.slick-active {
+        background-color: $color__bgmp-purple;
+    }
+}
+
+
+/**** SLICK SLIDER ****/
+.slider {
+    height: 180px;
+	text-align: center;
+
+    &, .slick-track, .slick-list {
+        height: 100% !important;
+    }
+
+    .slick-prev, .slick-next {
+        width: 20px;
+		height: 39px;
+        background-size: 20px 39px;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        color: transparent;
+        border: none;
+        outline: transparent;
+
+        &:before {
+			content: "";
+		}
+
+        &:hover,
+        &:focus {
+			background: transparent;
+			background-size: 20px 39px;
+            color: transparent;
+
+			&:before {
+				content: "";
+				opacity: 1;
+			}
+        }
+
+        @media (max-width: 768px) {
+            width: 10px;
+            height: 20px;
+            background-size: 12px 20px !important;
+        }
+    }
+
+    .slick-prev {
+        left: 25px;
+        // background: url('../img/pictos/back.png');
+
+		&:hover, &:focus {
+			// background-image: url('../img/pictos/back.png') !important;
+		}
+    }
+
+    .slick-next {
+        right: 25px;
+        // background: url('../img/pictos/next.png');
+
+		&:hover, &:focus {
+			// background-image: url('../img/pictos/next.png') !important;
+		}
+    }
+
+    .slick-slide {
+        height: 100%;
+        min-height: 600px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        @media (max-width: 800px) {
+            min-height: 400px;
+        }
+
+        @media (max-width: 500px) {
+            min-height: 250px;
+        }
+    }
+
+    .slick-custom-dots {
+        margin-top: -2rem;
+
+        li {
+            @extend .carousel-dots;
+        }
+
+        button {
+            visibility: hidden;
+        }
+    }
+
+}
