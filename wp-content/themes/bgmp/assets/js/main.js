@@ -9,8 +9,9 @@
 
 ( function( $ ) {
 	$( document ).ready( function( ) {
-		smoothScroll();
-		slider();
+		if ( $( '.slider' ).length > 0 ) {
+			slider();
+		}
 
 		$( 'input.search-submit' ).attr( 'value', '🔍' );
 
@@ -21,18 +22,15 @@
 				scrollTop: eval( pos - header - 30 ),
 			}, 2000 );
 		} );
-	} );
 
-
-	/**
-	 * Smooth scrolling effect for anchors
-	 */
-	function smoothScroll() {
+		/**
+		 * Smooth scrolling effect for anchors
+		 */
 		// Add smooth scrolling to all links
 		$( 'a' ).on( 'click', function( event ) {
-			// Make sure this.hash has a value before overriding default behavior
+		// Make sure this.hash has a value before overriding default behavior
 			if ( this.hash !== '' ) {
-				// Prevent default anchor click behavior
+			// Prevent default anchor click behavior
 				event.preventDefault();
 
 				// Store hash
@@ -43,12 +41,12 @@
 				$( 'html, body' ).animate( {
 					scrollTop: $( hash ).offset().top,
 				}, 800, function() {
-				// Add hash (#) to URL when done scrolling (default click behavior)
+					// Add hash (#) to URL when done scrolling (default click behavior)
 					window.location.hash = hash;
 				} );
 			} // End if
 		} );
-	}
+	} );
 
 	/**
 	 * SLICK - SLIDER

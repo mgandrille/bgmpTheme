@@ -193,3 +193,11 @@ require get_template_directory() . '/inc/setup.php';
  * CUSTOM POST TYPES
  */
 require get_template_directory() . '/inc/cpt/portfolio.php';
+
+// add_action( 'pre_get_posts', 'add_portfolios_to_query' );
+
+// function add_portfolios_to_query( $query ) {
+//     if ( is_home() && $query->is_main_query() )
+//         $query->set( 'post_type', array( 'post', 'portfolios' ) );
+//     return $query;
+// }

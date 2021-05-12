@@ -6,6 +6,14 @@
  */
 
 
+// Get Portfolio
+$args = array(
+    'post_type' => 'portfolios_page',
+    'posts_per_page' => 3
+);
+$portfolios = new WP_Query( $args );
+
+
 get_header();
 ?>
 
@@ -39,11 +47,24 @@ get_header();
                     <br>- Landing pages pour les promoteurs immobiliers
                     <br>- Sites vitrines
                 </p>
-                <div class="websites">
-                    *** 3 sites web ***
-                    *** A METTRE SOUS FORME DE CARTES ***
-                </div>
-                <a href="" class="btn">Découvrir mon portfolio</a>
+                <div class="websites row">
+                <?php if ( $portfolios->have_posts() ) : ?>
+                    <?php while ( $portfolios->have_posts() ) : $portfolios->the_post(); ?>
+                        <div class="col-12 col-md-4">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail(); ?>
+                                <div class="overlay">
+                                    <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+                                </div><!-- .overlay -->
+                            </a>
+                        </div>
+                    <?php endwhile;
+                    wp_reset_postdata(); ?>
+                <?php else:  ?>
+                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                <?php endif; ?>
+                    </div>
+                <a href="<?= get_post_type_archive_link('portfolios_page') ?>" class="btn">Découvrir mon portfolio</a>
             </div>
         </section>
         <section id="blog">
@@ -53,7 +74,7 @@ get_header();
                     Lorsque j'ai débuté ma reconversion dans le développement web, je me suis lancée dans la rédaction
                     d'un blog pour partager mes apprentissages.
                 </p>
-                <p>Cliquez ici pour découvrir <a href=""><span>Le Blog de Marie</span></a> !</p>
+                <p>Cliquez ici pour découvrir <a href="<?= get_permalink( get_page_by_path( 'le-blog-de-marie' ) ); ?>"><span>Le Blog de Marie</span></a> !</p>
             </div>
         </section>
         <section id="contact">
