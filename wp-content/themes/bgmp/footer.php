@@ -42,7 +42,7 @@
 					- <a href="<?= get_permalink( get_page_by_path( 'politique-de-confidentialite' ) ); ?>">Politique de confidentialité</a>
 				</div>
 				<div class="copy col-12 col-md-6">
-					<b>© <a href="https://www.bgmp.fr/" target="_blank">BGMP</a></b> - 2021 -
+					<b>&copy; <a href="https://www.bgmp.fr/" target="_blank">BGMP</a></b> - <?= date('Y'); ?> -
 				</div>
 			</div>
 		</div>

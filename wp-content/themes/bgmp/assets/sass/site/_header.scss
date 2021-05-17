@@ -111,13 +111,14 @@
         .site-branding {
             a {
                 p {
-                    font-size: .6rem;
+                    font-size: .7rem;
                     @media (min-width: 768px) {
                         font-size: .8rem;
                     }
                 }
                 .site-title {
                     font-size: 1.7rem;
+                    margin-bottom: -.7rem;
                     @media (min-width: 768px) {
                         font-size: 2rem;
                     }
