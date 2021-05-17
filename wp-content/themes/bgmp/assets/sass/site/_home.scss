@@ -8,6 +8,7 @@ section {
     padding: 5rem 1rem;
 
     &#presentation {
+        margin-top: 6rem;
         height: 86vh;
         background: url('./assets/img/sky.jpeg') center no-repeat;
         background-size: cover;
@@ -15,6 +16,7 @@ section {
         background-blend-mode: soft-light;
 
         @media (min-width: 768px) {
+            margin-top: 5rem;
             height: 90vh;
         }
 

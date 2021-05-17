@@ -11,37 +11,34 @@
     z-index: 100;
 
     .site-branding {
-        p {
-            margin: 0;
-            font-size: .8rem;
-
-            @media (min-width: 768px) {
-                font-size: 1rem;
-            }
-
-        }
-        .site-title {
-            margin-bottom: -.7rem;
+        a {
             p {
+                margin: 0;
+                font-size: .8rem;
                 color: $color__bgmp-grey;
+
+                @media (min-width: 768px) {
+                    font-size: 1rem;
+                }
+
             }
-            a {
+            .site-title {
+                margin-bottom: -.7rem;
                 font-size: 2rem;
                 font-weight: 700;
                 font-family: $font__atma;
                 color: $color__bgmp-grey;
 
-                &:hover {
-                    text-decoration: none;
-                    color: $color__bgmp-purple;
-                    transition: 0.3s;
+                @media (min-width: 768px) {
+                    margin-bottom: -1rem;
+                    font-size: 3rem;
                 }
             }
-
-            @media (min-width: 768px) {
-                margin-bottom: -1rem;
-                a {
-                    font-size: 3rem;
+            &:hover {
+                text-decoration: none;
+                p {
+                    color: $color__bgmp-purple;
+                    transition: 0.3s;
                 }
             }
         }
@@ -107,4 +104,37 @@
             }
         }
     }
+
+    &.small-header {
+		height: 60px;
+
+        .site-branding {
+            a {
+                p {
+                    font-size: .6rem;
+                    @media (min-width: 768px) {
+                        font-size: .8rem;
+                    }
+                }
+                .site-title {
+                    font-size: 1.7rem;
+                    @media (min-width: 768px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+
+        #site-navigation {
+            button {
+                font-size: 1.8rem;
+            }
+
+            &.toggled {
+                .menu-menu-principal-container {
+                    top: 8vh;
+                }
+            }
+        }
+	}
 }

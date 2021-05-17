@@ -18,7 +18,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
@@ -31,22 +30,24 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$bgmp_description = get_bloginfo( 'description', 'display' );
-			if ( $bgmp_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $bgmp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+					<?php
+				else :
+					?>
+					<p class="site-title"><?php bloginfo( 'name' ); ?></p>
+					<?php
+				endif;
+				$bgmp_description = get_bloginfo( 'description', 'display' );
+				if ( $bgmp_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $bgmp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<?php endif; ?>
+			</a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">

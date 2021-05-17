@@ -1513,45 +1513,40 @@ main {
 	z-index: 100;
 }
 
-#masthead .site-branding p {
+#masthead .site-branding a p {
 	margin: 0;
 	font-size: .8rem;
+	color: #595959;
 }
 
 @media (min-width: 768px) {
-	#masthead .site-branding p {
+	#masthead .site-branding a p {
 		font-size: 1rem;
 	}
 }
 
-#masthead .site-branding .site-title {
+#masthead .site-branding a .site-title {
 	margin-bottom: -.7rem;
-}
-
-#masthead .site-branding .site-title p {
-	color: #595959;
-}
-
-#masthead .site-branding .site-title a {
 	font-size: 2rem;
 	font-weight: 700;
 	font-family: "Atma", cursive;
 	color: #595959;
 }
 
-#masthead .site-branding .site-title a:hover {
-	text-decoration: none;
-	color: #7f0a79;
-	transition: 0.3s;
-}
-
 @media (min-width: 768px) {
-	#masthead .site-branding .site-title {
+	#masthead .site-branding a .site-title {
 		margin-bottom: -1rem;
-	}
-	#masthead .site-branding .site-title a {
 		font-size: 3rem;
 	}
+}
+
+#masthead .site-branding a:hover {
+	text-decoration: none;
+}
+
+#masthead .site-branding a:hover p {
+	color: #7f0a79;
+	transition: 0.3s;
 }
 
 #masthead .site-branding,
@@ -1605,6 +1600,38 @@ main {
 	transition: 0.3s;
 }
 
+#masthead.small-header {
+	height: 60px;
+}
+
+#masthead.small-header .site-branding a p {
+	font-size: .6rem;
+}
+
+@media (min-width: 768px) {
+	#masthead.small-header .site-branding a p {
+		font-size: .8rem;
+	}
+}
+
+#masthead.small-header .site-branding a .site-title {
+	font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+	#masthead.small-header .site-branding a .site-title {
+		font-size: 2rem;
+	}
+}
+
+#masthead.small-header #site-navigation button {
+	font-size: 1.8rem;
+}
+
+#masthead.small-header #site-navigation.toggled .menu-menu-principal-container {
+	top: 8vh;
+}
+
 @media (min-width: 768px) {
 	.home {
 		font-size: 1.1rem;
@@ -1616,6 +1643,7 @@ section {
 }
 
 section#presentation {
+	margin-top: 6rem;
 	height: 86vh;
 	background: url("./assets/img/sky.jpeg") center no-repeat;
 	background-size: cover;
@@ -1625,6 +1653,7 @@ section#presentation {
 
 @media (min-width: 768px) {
 	section#presentation {
+		margin-top: 5rem;
 		height: 90vh;
 	}
 }

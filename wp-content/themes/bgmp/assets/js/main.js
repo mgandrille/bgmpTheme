@@ -1,4 +1,4 @@
-/* global wp, jQuery */
+/* global jQuery */
 /**
  * File main.js.
  *
@@ -9,6 +9,8 @@
 
 ( function( $ ) {
 	$( document ).ready( function( ) {
+		menuSticky();
+
 		if ( $( '.slider' ).length > 0 ) {
 			slider();
 		}
@@ -19,7 +21,7 @@
 			const header = $( '#masthead' ).height();
 			const pos = $( '#description' ).offset().top;
 			$( 'html, body' ).animate( {
-				scrollTop: eval( pos - header - 30 ),
+				scrollTop: eval( pos - header + 20 ),
 			}, 2000 );
 		} );
 
@@ -65,3 +67,18 @@
 		} );
 	}
 }( jQuery ) );
+
+/**
+ * Function for having sticky menu on scroll
+ */
+function menuSticky() {
+	document.addEventListener( 'scroll', function() {
+		const menu = document.getElementById( 'masthead' );
+		// console.log( window.scrollY );
+		if ( window.scrollY > 120 ) {
+			menu.classList.add( 'small-header' );
+		} else {
+			menu.classList.remove( 'small-header' );
+		}
+	} );
+}
