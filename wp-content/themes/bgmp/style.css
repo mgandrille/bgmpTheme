@@ -420,7 +420,7 @@ h1,
 
 h2,
 .h2 {
-	font-size: 3.2rem;
+	font-size: 3rem;
 }
 
 h3,
@@ -1225,27 +1225,23 @@ main {
 	padding-top: 3rem;
 }
 
-.portfolios_page,
-.websites {
+.portfolios_page, section#portfolio .websites .items {
 	position: relative;
 	height: 350px;
 	max-height: 350px;
 	margin: 1rem auto;
 }
 
-.portfolios_page a img,
-.websites a img {
+.portfolios_page a img, section#portfolio .websites .items a img {
 	display: block;
 	height: 100%;
 }
 
-.portfolios_page a:hover .overlay,
-.websites a:hover .overlay {
+.portfolios_page a:hover .overlay, section#portfolio .websites .items a:hover .overlay {
 	height: 100%;
 }
 
-.portfolios_page .overlay,
-.websites .overlay {
+.portfolios_page .overlay, section#portfolio .websites .items .overlay {
 	position: absolute;
 	bottom: 0;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -1255,8 +1251,7 @@ main {
 	transition: .5s ease;
 }
 
-.portfolios_page .overlay .entry-title,
-.websites .overlay .entry-title {
+.portfolios_page .overlay .entry-title, section#portfolio .websites .items .overlay .entry-title {
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -1610,8 +1605,14 @@ main {
 	transition: 0.3s;
 }
 
+@media (min-width: 768px) {
+	.home {
+		font-size: 1.1rem;
+	}
+}
+
 section {
-	padding: 4rem 1rem;
+	padding: 5rem 1rem;
 }
 
 section#presentation {
@@ -1636,6 +1637,12 @@ section#presentation .container p {
 	text-align: center;
 }
 
+@media (min-width: 768px) {
+	section#presentation .container p {
+		font-size: 1.4rem;
+	}
+}
+
 section#presentation .i-down {
 	font-size: 2rem;
 	position: absolute;
@@ -1645,6 +1652,7 @@ section#presentation .i-down {
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
+	padding: .2rem 1rem;
 }
 
 section#presentation .i-down:hover {
@@ -1677,20 +1685,47 @@ section h1 span {
 	section h1 {
 		text-align: center;
 		margin: 4rem auto;
-		padding-left: 4rem;
 		padding-top: 0;
+		font-size: 4.5rem;
 		line-height: initial;
-		background-size: 4rem;
 	}
 	section h1 span {
 		display: initial;
 		margin-top: 0;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
+}
+
+section .btn {
+	margin: 2rem auto;
+	padding: .5rem 3rem;
+	text-transform: uppercase;
+	color: #6dc4b8;
+	font-weight: 600;
+	border: 2px solid #6dc4b8;
+	border-radius: initial;
+	transition: 0.7s;
+}
+
+section .btn:hover {
+	background: #7f0a79;
+	color: #FFF;
+	border-color: #7f0a79;
 }
 
 section#description h2 {
 	display: none;
+}
+
+section#description .btn {
+	color: #7f0a79;
+	border-color: #7f0a79;
+}
+
+section#description .btn:hover {
+	background: #6dc4b8;
+	border-color: #6dc4b8;
+	color: #FFF;
 }
 
 section#portfolio h2, section#contact h2 {
@@ -1702,21 +1737,8 @@ section#portfolio {
 	background: white;
 }
 
-section#portfolio .btn {
-	margin: 2rem auto;
-	padding: .5rem 3rem;
-	text-transform: uppercase;
-	color: #6dc4b8;
-	font-weight: 600;
-	border: 2px solid #6dc4b8;
-	border-radius: initial;
-	transition: 0.7s;
-}
-
-section#portfolio .btn:hover {
-	background: #7f0a79;
-	color: #FFF;
-	border-color: #7f0a79;
+section#portfolio .websites {
+	padding-bottom: 2rem;
 }
 
 section#blog {
@@ -1727,7 +1749,7 @@ section#blog {
 	background-attachment: fixed;
 	background-blend-mode: soft-light;
 	position: relative;
-	background-color: rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.3);
 	/* white background with opacity */
 }
 

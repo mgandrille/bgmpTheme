@@ -1,5 +1,11 @@
+.home {
+    @media (min-width: 768px) {
+        font-size: 1.1rem;
+    }
+}
+
 section {
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
 
     &#presentation {
         height: 86vh;
@@ -17,6 +23,9 @@ section {
 
             p {
                 text-align: center;
+                @media (min-width: 768px) {
+                    font-size: 1.4rem;
+                }
             }
         }
 
@@ -29,6 +38,7 @@ section {
             right: 0;
             margin-left: auto;
             margin-right: auto;
+            padding: .2rem 1rem;
             &:hover {
                 cursor: pointer;
             }
@@ -59,22 +69,50 @@ section {
         @media (min-width: 768px) {
             text-align: center;
             margin: 4rem auto;
-            padding-left: 4rem;
+            // padding-left: 4rem;
             padding-top: 0;
+            font-size: 4.5rem;
             line-height: initial;
-            background-size: 4rem;
+            // background-size: 4rem;
 
             span {
                 display: initial;
                 margin-top: 0;
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     }
 
+    .btn {
+        margin: 2rem auto;
+        padding: .5rem 3rem;
+        text-transform: uppercase;
+        color: $color__bgmp-blue;
+        font-weight: 600;
+        border: 2px solid $color__bgmp-blue;
+        border-radius: initial;
+        transition: 0.7s;
+
+        &:hover {
+            background: $color__bgmp-purple;
+            color: #FFF;
+            border-color: $color__bgmp-purple;
+        }
+    }
+
+
     &#description {
         h2 {
             display: none;
+        }
+        .btn {
+            color: $color__bgmp-purple;
+            border-color: $color__bgmp-purple;
+            &:hover {
+                background: $color__bgmp-blue;
+                border-color: $color__bgmp-blue;
+                color: #FFF;
+            }
         }
     }
 
@@ -89,20 +127,10 @@ section {
     &#portfolio{
         background: white;
 
-        .btn {
-            margin: 2rem auto;
-            padding: .5rem 3rem;
-            text-transform: uppercase;
-            color: $color__bgmp-blue;
-            font-weight: 600;
-            border: 2px solid $color__bgmp-blue;
-            border-radius: initial;
-            transition: 0.7s;
-
-            &:hover {
-                background: $color__bgmp-purple;
-                color: #FFF;
-                border-color: $color__bgmp-purple;
+        .websites {
+            padding-bottom: 2rem;
+            .items {
+                @extend .portfolios_page ;
             }
         }
     }
@@ -115,7 +143,7 @@ section {
         background-attachment: fixed;
         background-blend-mode: soft-light;
         position: relative;
-        background-color: rgba(#FFF,0.25); /* white background with opacity */
+        background-color: rgba(#FFF,0.3); /* white background with opacity */
 
         h2 {
             color: $color__bgmp-purple;
