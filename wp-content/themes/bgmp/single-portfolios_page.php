@@ -9,6 +9,7 @@
 
 wp_enqueue_style( 'slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), _S_VERSION );
 wp_enqueue_style( 'slick-slider-theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), _S_VERSION );
+wp_enqueue_style( 'fancybox', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', array(), _S_VERSION );
 
 
 $infos = get_field('goal', $post->ID);
@@ -71,7 +72,7 @@ get_header();
 			<div class="container">
 				<div class="slider">
 					<?php foreach($gallery as $img) : ?>
-						<div class="carousel-image" title="" data-fancybox="" href="<?=$img?>" style="background-image: url('<?=$img?>'); "></div>
+						<div class="carousel-image" title="" data-fancybox="gallery" href="<?=$img?>" style="background-image: url('<?=$img?>'); "></div>
 					<?php endforeach; ?>
 				</div>
 			</div>
@@ -92,5 +93,6 @@ get_header();
 
 <?php
 wp_enqueue_script( 'slick-slider', "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", array('jquery'), _S_VERSION, true );
+wp_enqueue_script( 'fancybox', "https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js", array('jquery'), _S_VERSION, true );
 
 get_footer();
