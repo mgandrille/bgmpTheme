@@ -175,11 +175,15 @@ main {
 	height: 350px;
 	max-height: 350px;
 	margin: 1rem auto;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 	a {
 		img {
 			display: block;
 			height: 100%;
+			object-fit: cover;
 		}
 
 		&:hover {

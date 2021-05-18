@@ -15,7 +15,7 @@
 		<div class="site-info container-fluid">
 			<div class="row">
 				<div class="logo col-12 col-md-2">
-					<a href="<?=get_home_url()?>"><img src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo Hello Familles"></a>
+					<a href="<?=get_home_url()?>"><img src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo BGMP Développement Web"></a>
 				</div>
 				<div class="search col-12 col-md-3 offset-md-1">
 					<?php get_search_form();?>
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 		</div><!-- .site-info -->
-		<div class="mentions container">
+		<div class="mentions container-fluid">
 			<div class="row justify-content-around">
 				<div class="ml col-12 col-md-6">
 					<a href="<?= get_permalink( get_page_by_path( 'mentions-legales' ) ); ?>">Mentions légales</a>

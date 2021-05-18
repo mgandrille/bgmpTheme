@@ -21,7 +21,13 @@ get_header();
 			<div class="container">
 				<div class="competences">
 					<h2>Compétences</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque aspernatur nobis voluptates consequatur ad illum autem quae facere nesciunt maiores reiciendis quaerat similique praesentium repellendus ipsum, quo, soluta totam.</p>
+					<p>
+						Je développe des sites web principalement sous Wordpress.
+						Ce qui permet d'avoir une gestion facile pour les clients, tout en permettant une création à leur image.
+					</p>
+					<p>
+						Mes différentes expériences m'ont aussi permis de développer des pages statiques, telles que des landing pages en full PHP.
+					</p>
 				</div>
 
 				<div class="sites">

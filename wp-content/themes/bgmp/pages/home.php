@@ -22,7 +22,7 @@ get_header();
         <section id="presentation">
             <div class="container">
                 <h1>BGMP <span>Développement Web</span></h1>
-                <p>Vous souhaitez créer un site web ? Parlons-en !</p>
+                <p>Vous souhaitez créer un site web&nbsp;? Parlons-en&nbsp;!</p>
             </div>
             <div class="i-down"><i class="fas fa-chevron-down"></i></div>
         </section>

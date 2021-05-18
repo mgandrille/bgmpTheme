@@ -7,8 +7,8 @@
  * @package bgmp
  */
 
-wp_enqueue_style( 'slick-slider', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), _S_VERSION );
-wp_enqueue_style( 'slick-slider-theme', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), _S_VERSION );
+wp_enqueue_style( 'slick-slider', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), _S_VERSION );
+wp_enqueue_style( 'slick-slider-theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), _S_VERSION );
 
 
 $infos = get_field('goal', $post->ID);
@@ -91,6 +91,6 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-wp_enqueue_script( 'slick-slider', "http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", array('jquery'), _S_VERSION, true );
+wp_enqueue_script( 'slick-slider', "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", array('jquery'), _S_VERSION, true );
 
 get_footer();

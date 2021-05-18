@@ -1043,6 +1043,7 @@ footer .mentions {
 
 footer .mentions .copy {
 	text-align: right;
+	padding-right: 5rem;
 }
 
 @media (max-width: 968px) {
@@ -1230,11 +1231,15 @@ main {
 	height: 350px;
 	max-height: 350px;
 	margin: 1rem auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .portfolios_page a img, section#portfolio .websites .items a img {
 	display: block;
 	height: 100%;
+	object-fit: cover;
 }
 
 .portfolios_page a:hover .overlay, section#portfolio .websites .items a:hover .overlay {
