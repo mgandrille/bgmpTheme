@@ -30,16 +30,17 @@ get_header();
             <div class="container">
                 <h2>Développeur web freelance à Lyon - création de sites Wordpress</h2>
                 <p>
-                    Développeuse Web sur Lyon, j’ai découvert sur le tard le métier. Et depuis 2020, je m’investis à 100% pour créer des sites web.
+                    <strong>Développeuse Web sur Lyon</strong>, je m’investis à 100% pour créer des sites web <strong>qui vous ressemblent</strong>.
                 </p>
                 <p>
                     La création d'un site web est une étape importante dans la vie d'une société.
-                    Il permet de mettre en avant votre image, votre savoir faire, vos produits...
+                    Il permet de <strong>mettre en avant votre image</strong>, votre savoir faire, vos produits...
                     <br>Il est donc important que votre site web soit développé pour vous ressembler.
-                    C'est ce que je m'applique à faire lors de notre collaboration.
+                    Lors de notre collaboration, nous échangerons ensemble sur vos attentes et votre vision des choses pour
+                    établir un plan d'action permettant l'aboutissement de votre projet.
                 </p>
                 <p>
-                    Je suis disponible pour étudier de nouveaux projets de site web.
+                    Je suis disponible pour étudier de nouveaux projets de <strong>développement de site web</strong>.
                     Avec vous et surtout pour vous !
                 </p>
                 <a href="#contact" class="btn">Me contacter</a>
@@ -54,7 +55,7 @@ get_header();
                     <br>- Sites vitrines
                 </p>
                 <p>
-                    Et quoi de mieux que des exemples pour se faire une idée ?
+                    Et quoi de mieux que <strong>quelques exemples</strong> pour se faire une idée ?
                 </p>
                 <div class="websites row">
                 <?php if ( $portfolios->have_posts() ) : ?>
@@ -73,7 +74,7 @@ get_header();
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                 <?php endif; ?>
                     </div>
-                <p>Pour découvrir plus en détail tous les sites web que j'ai développé, vous pouvez passer voir mon portfolio !</p>
+                <p>Pour découvrir plus en détail <strong>tous les sites web que j'ai développé</strong>, vous pouvez passer voir mon portfolio !</p>
                 <a href="<?= get_post_type_archive_link('portfolios_page') ?>" class="btn">Découvrir mon portfolio</a>
             </div>
         </section>
@@ -83,7 +84,8 @@ get_header();
                 <p>
                     Lorsque j'ai débuté ma reconversion dans le développement web, je me suis lancée dans la rédaction
                     d'un blog pour partager mes apprentissages.
-                    <br>Le développement et la création de sites web nécessite l'acquisition de différentes notions, de nouveaux langages, de connaissances bien spécifiques...
+                    <br>Le développement et la création de sites web nécessite l'acquisition de différentes notions, de
+                    nouveaux langages, de connaissances bien spécifiques...
                 </p>
                 <p>Cliquez ici pour découvrir <a href="<?= get_permalink( get_page_by_path( 'le-blog-de-marie' ) ); ?>"><span>Le Blog de Marie</span></a> !</p>
             </div>

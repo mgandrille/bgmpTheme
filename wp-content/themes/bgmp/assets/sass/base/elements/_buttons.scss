@@ -19,3 +19,9 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+#cookie-notice {
+	.cn-button {
+		background: $color__bgmp-pink;
+	}
+}

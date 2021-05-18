@@ -545,6 +545,7 @@ object {
 }
 
 img {
+	display: block;
 	height: auto;
 	max-width: 100%;
 }
@@ -611,6 +612,10 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
+}
+
+#cookie-notice .cn-button {
+	background: #bd22b5;
 }
 
 input[type="text"],
@@ -701,7 +706,7 @@ textarea {
 
 .page .wp-block-contact-form-7-contact-form-selector {
 	padding: 1rem;
-	border: 3px solid #FFF;
+	background: rgba(255, 255, 255, 0.4);
 }
 
 @media (min-width: 768px) {
@@ -1283,6 +1288,16 @@ main {
 	display: block;
 	width: 120px;
 	background: #FFF;
+}
+
+.post-type-archive-portfolios_page .logos {
+	justify-content: center;
+	align-items: center;
+}
+
+.post-type-archive-portfolios_page .logos img {
+	height: 70px;
+	margin: .6rem;
 }
 
 /* Comments

@@ -22,16 +22,25 @@ get_header();
 				<div class="competences">
 					<h2>Compétences</h2>
 					<p>
-						Je développe des sites web principalement sous Wordpress.
-						Ce qui permet d'avoir une gestion facile pour les clients, tout en permettant une création à leur image.
+						De par ma formation, je connais les principaux langages permettant le développement de pages web
+						(tels que HTML, CSS, JavaScript, PHP). Ces compétences me permettent de créer un site en utilisant
+						différentes technologies pour répondre au mieux au besoin du client.
 					</p>
 					<p>
-						Mes différentes expériences m'ont aussi permis de développer des pages statiques, telles que des landing pages en full PHP.
+						Je développe des sites web principalement sous Wordpress.
+						Ce qui permet d'avoir une gestion facile pour les clients, tout en permettant une création visuelle à leur image.
 					</p>
+					<div class="logos row">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/html.png" alt="Logo html">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/js.png" alt="Logo Javascript">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/php.png" alt="Logo php">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/wordpress.png" alt="Logo Wordpress">
+					</div>
 				</div>
 
 				<div class="sites">
 					<h2>Les sites</h2>
+					<p>Découvrez ici les différents sites sur lesquels j'ai travaillé.</p>
 					<div class="row">
 						<?php
 						/* Start the Loop */
