@@ -11,43 +11,47 @@
 
 ?>
 
-<footer id="colophon" class="site-footer">
-		<div class="site-info container-fluid">
-			<div class="row">
-				<div class="logo col-12 col-md-2">
-					<a href="<?=get_home_url()?>"><img src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo BGMP Développement Web"></a>
-				</div>
-				<div class="search col-12 col-md-3 offset-md-1">
-					<?php get_search_form();?>
-				</div>
-				<div class="contact-us col-6 col-md-2 btn">
-					<a href="<?= get_page_link( get_page_by_title( 'contact' ) ); ?>">Prendre contact</a>
-				</div>
-				<div class="social-network col-12 col-md-4">
-					<p>Suivez moi sur les réseaux sociaux</p>
-					<div class="row">
-						<div class="col-2"><a href="https://www.facebook.com/blogdemarie" target="_blank"><i class="fab fa-facebook"></i></a></div>
-						<!-- <div class="col-2"><a href="" target="_blank"><i class="fab fa-instagram"></i></a></div> -->
-						<div class="col-2"><a href="https://twitter.com/Marie_gdrl" target="_blank"><i class="fab fa-twitter"></i></a></div>
-						<div class="col-2"><a href="https://www.linkedin.com/in/marie-gandrille" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-						<div class="col-2"><a href="https://github.com/mgandrille" target="_blank"><i class="fab fa-github"></i></a></div>
+	<footer id="colophon" class="site-footer">
+		<div class="container">
+			<div class="site-info container-fluid">
+				<div class="row">
+				<?php /*
+					<div class="logo col-12 col-md-2">
+						<a href="<?=get_home_url()?>"><img src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo BGMP Développement Web"></a>
+					</div>
+					<div class="search col-12 col-md-3 offset-md-1">
+						<?php get_search_form();?>
+					</div>
+					<div class="contact-us col-6 col-md-2 btn">
+						<a href="<?= get_page_link( get_page_by_title( 'contact' ) ); ?>">Prendre contact</a>
+					</div>
+				*/ ?>
+					<div class="social-network col-12 col-md-4">
+						<p>Suivez moi sur les réseaux sociaux</p>
+						<div class="row">
+							<div class="col-2"><a href="https://www.facebook.com/profile.php?id=61559244472437" target="_blank"><i class="fab fa-facebook"></i></a></div>
+							<div class="col-2"><a href="https://www.instagram.com/bgmp_webdev/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+							<!-- <div class="col-2"><a href="https://twitter.com/Marie_gdrl" target="_blank"><i class="fab fa-twitter"></i></a></div> -->
+							<div class="col-2"><a href="https://www.linkedin.com/company/bgmp-web" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+							<div class="col-2"><a href="https://github.com/mgandrille" target="_blank"><i class="fab fa-github"></i></a></div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div><!-- .site-info -->
-		<div class="mentions container-fluid">
-			<div class="row justify-content-around">
-				<div class="ml col-12 col-md-6">
-					<a href="<?= get_permalink( get_page_by_path( 'mentions-legales' ) ); ?>">Mentions légales</a>
-					- <a href="<?= get_permalink( get_page_by_path( 'politique-de-confidentialite' ) ); ?>">Politique de confidentialité</a>
-				</div>
-				<div class="copy col-12 col-md-6">
-					<b>&copy; <a href="https://www.bgmp.fr/" target="_blank">BGMP</a></b> - <?= date('Y'); ?> -
+			</div><!-- .site-info -->
+			<div class="mentions container-fluid">
+				<div class="row justify-content-around">
+					<div class="ml col-12 col-md-6">
+						<a href="<?= get_permalink( get_page_by_path( 'mentions-legales' ) ); ?>">Mentions légales</a>
+						- <a href="<?= get_permalink( get_page_by_path( 'politique-de-confidentialite' ) ); ?>">Politique de confidentialité</a>
+					</div>
+					<div class="copy col-12 col-md-6">
+						<b>&copy;<?= date('Y'); ?> - <a href="https://www.bgmp.fr/" target="_blank">BGMP - Développement Web</a></b>
+					</div>
 				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+<!-- </div>#page -->
 
 <?php wp_footer(); ?>
 

@@ -11,6 +11,12 @@
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
+
+	/* set base font-size to equiv "10px", which is adapted to rem unit */
+	font-size: 62.5%;
+	/* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+	font-size: calc(1em * 0.625);
+
 }
 
 /* Sections

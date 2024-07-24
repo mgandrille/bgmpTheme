@@ -1,9 +1,15 @@
 /** CUSTOM COLORS **/
-$color__bgmp-blue: #6dc4b8;
-$color__bgmp-purple: #7f0a79;
-$color__bgmp-wheat: #f5efe0;
-$color__bgmp-grey: #595959;
-$color__bgmp-pink: #bd22b5;
+// $color__bgmp-blue: #DB1869;
+$color__bgmp-purple: #D99543;
+$color__bgmp-wheat: #D0EBFC;
+// $color__bgmp-grey: #000000;
+// $color__bgmp-pink: #6ABFB5;
+
+$color__bgmp-pink: #DB1869;
+$color__bgmp-blue: #D0EBFC;
+$color__bgmp-green: #6ABFB5;
+$color__bgmp-orange: #D99543;
+$color__bgmp-grey: #000000;
 
 /** MAIN COLORS **/
 $color__background-body: #fff;
@@ -16,9 +22,9 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: $color__bgmp-pink;
+$color__link: $color__bgmp-green;
 $color__link-visited: $color__link;
-$color__link-hover: $color__bgmp-purple;
+$color__link-hover: darken($color__bgmp-green, .25);
 $color__text-main: #404040;
 
 $color__border-button: #ccc #ccc #bbb;

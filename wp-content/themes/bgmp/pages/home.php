@@ -21,41 +21,66 @@ get_header();
 
         <section id="presentation">
             <div class="container">
-                <h1>BGMP <span>Développement Web</span></h1>
-                <p>Vous souhaitez créer un site web&nbsp;? Parlons-en&nbsp;!</p>
+                <h1><span>BGMP</span> votre expert en création de sites vitrines à Lyon.</h1>
+                <p>Spécialiste WordPress, découvrez comment je peux vous aider à créer le site web de vos rêves.</p>
             </div>
-            <div class="i-down"><i class="fas fa-chevron-down"></i></div>
+            <!-- <div class="i-down"><i class="fas fa-chevron-down"></i></div> -->
         </section>
+
         <section id="description">
             <div class="container">
                 <h2>Développeur web freelance à Lyon - création de sites Wordpress</h2>
                 <p>
-                    <strong>Développeuse Web sur Lyon</strong>, je m’investis à 100% pour créer des sites web <strong>qui vous ressemblent</strong>.
+                    La conception d’un site web est une étape cruciale dans le développement d’une entreprise. Il sert 
+                    de <b>vitrine numérique</b> pour votre marque, mettant en avant votre expertise, vos produits ou services. 
+                    C’est pourquoi il est essentiel que votre site web soit conçu pour <b>représenter fidèlement qui vous 
+                    êtes.</b>
                 </p>
                 <p>
-                    La création d'un site web est une étape importante dans la vie d'une société.
-                    Il permet de <strong>mettre en avant votre image</strong>, votre savoir faire, vos produits...
-                    <br>Il est donc important que votre site web soit développé pour vous ressembler.
-                    Lors de notre collaboration, nous échangerons ensemble sur vos attentes et votre vision des choses pour
-                    établir un plan d'action permettant l'aboutissement de votre projet.
+                    En tant que <b>développeuse web basée à Lyon</b>, je m’engage pleinement à créer des sites web 
+                    qui reflètent fidèlement <b>votre identité et vos valeurs</b>.
                 </p>
                 <p>
-                    Je suis disponible pour étudier de nouveaux projets de <strong>développement de site web</strong>.
-                    Avec vous et surtout pour vous !
+                    Lors de notre collaboration, nous aurons des échanges approfondis sur vos attentes et votre vision 
+                    afin d’établir une feuille de route claire pour la réalisation de votre projet. <b>Je suis là pour 
+                    travailler avec vous, et surtout, pour vous.</b> Ensemble, nous transformerons vos idées pour faire 
+                    briller votre entreprise en ligne.
                 </p>
-                <a href="#contact" class="btn">Me contacter</a>
+                <a href="<?= get_permalink( get_page_by_path( 'a-propos' ) ); ?>" class="btn">
+                    Découvrez pourquoi je suis le bon choix pour votre projet
+                </a>
             </div>
         </section>
-        <section id="portfolio">
+
+        <section id="offre">
             <div class="container">
-                <h2>Portfolio</h2>
+                <h2>Mon offre</h2>
                 <p>
-                    Tout au long de mon expérience, j'ai développé différents types de sites web :
-                    <br>- Landing pages pour les promoteurs immobiliers
-                    <br>- Sites vitrines
+                    En tant que développeur web freelance, je propose une gamme complète de services pour répondre à 
+                    vos besoins. Que vous ayez besoin d'un site vitrine pour présenter votre entreprise, ou d'une 
+                    refonte de votre site existant, je suis là pour vous aider. Mes services incluent la conception 
+                    de sites web, l'optimisation pour les moteurs de recherche, la maintenance et la mise à jour de 
+                    sites web, et bien plus encore. Chaque projet est réalisé avec soin et attention aux détails, 
+                    garantissant un produit final qui répond à vos attentes et aide votre entreprise à se démarquer 
+                    en ligne.
                 </p>
                 <p>
-                    Et quoi de mieux que <strong>quelques exemples</strong> pour se faire une idée ?
+                    Commencez votre projet dès aujourd’hui&nbsp;!
+                </p>
+                <a href="<?= get_permalink( get_page_by_path( 'contact' ) ); ?>" class="btn">
+                    Contactez-moi dès maintenant pour discuter de vos besoins
+                </a>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Projets</h2>
+                <p>
+                    Chaque site web que je crée est conçu pour répondre aux besoins spécifiques de chaque client.
+                </p>
+                <p>
+                    Quoi de mieux que de visualiser quelques réalisations récentes pour se faire une idée&nbsp;?
                 </p>
                 <div class="websites row">
                 <?php if ( $portfolios->have_posts() ) : ?>
@@ -74,33 +99,37 @@ get_header();
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                 <?php endif; ?>
                     </div>
-                <p>Pour découvrir plus en détail <strong>tous les sites web que j'ai développé</strong>, vous pouvez passer voir mon portfolio !</p>
+                <p>Découvrez aussi toutes mes créations de sites web Wordpress dans mon portfolio.</p>
                 <a href="<?= get_post_type_archive_link('portfolios_page') ?>" class="btn">Découvrir mon portfolio</a>
             </div>
         </section>
-        <section id="blog">
+        <!-- <section id="blog">
             <div class="container">
                 <h2>Ma reconversion, mes apprentissages</h2>
                 <p>
                     Lorsque j'ai débuté ma reconversion dans le développement web, je me suis lancée dans la rédaction
                     d'un blog pour partager mes apprentissages.
-                    <br>Le développement et la création de sites web nécessite l'acquisition de différentes notions, de
+                    <br>Le développement et la création de sites web nécessitent l'acquisition de différentes notions, de
                     nouveaux langages, de connaissances bien spécifiques...
                 </p>
-                <p>Cliquez ici pour découvrir <a href="<?= get_permalink( get_page_by_path( 'le-blog-de-marie' ) ); ?>"><span>Le Blog de Marie</span></a> !</p>
+                <p>Cliquez ici pour découvrir <a href="https://leblogdemarie.bgmp.fr"><span>Le Blog de Marie</span></a> !</p>
             </div>
-        </section>
+        </section> -->
         <section id="contact">
             <div class="container">
                 <h2>Prendre contact</h2>
-                <div class="row">
+                <p>Prêt à commencer dès aujourd’hui votre projet web&nbsp;?</p>
+                <a href="<?= get_permalink( get_page_by_path( 'contact' ) ); ?>" class="btn">
+                    Contactez-moi pour une consultation gratuite
+                </a>
+                <!-- <div class="row">
                     <div class="col-12 col-md-6 mb-4">
                         <img src="<?= get_template_directory_uri(); ?>/assets/img/contact.jpg" alt="">
                     </div>
                     <div class="col-12 col-md-6">
                         <?php the_content(); ?>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 

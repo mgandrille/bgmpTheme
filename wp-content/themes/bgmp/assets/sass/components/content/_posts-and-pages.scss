@@ -2,10 +2,10 @@
 	display: block;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
+// .post,
+// .page {
+// 	margin: 0 0 1.5em;
+// }
 
 .updated:not(.published) {
 	display: none;
@@ -23,12 +23,18 @@
 }
 
 main {
-	background: $color__bgmp-wheat;
+	// background: $color__bgmp-wheat;
 	margin-top: 7vh;
 	padding-bottom: 5rem;
 
-	@media (min-width: 768px) {
-		margin-top: 9.9vh;
+	// @media (min-width: 768px) {
+	// 	margin-top: 9.9vh;
+	// }
+}
+
+.home {
+	main {
+		padding-bottom: 0;
 	}
 }
 
@@ -40,9 +46,14 @@ main {
 
 .entry-header,
 .page-header {
-    background: $color__bgmp-blue;
+    background: $color__bgmp-wheat;
     text-align: center;
     padding: 3.5rem 1rem;
+
+	h1 {
+		text-transform: uppercase;
+		color: $color__bgmp-pink;
+	}
 
 	.entry-categories {
 		a {

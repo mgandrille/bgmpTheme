@@ -4,43 +4,58 @@
     padding: 1rem;
     position: fixed;
     top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     z-index: 100;
+
+    box-shadow: 0 7px 20px 0 rgba($color: #000000, $alpha: .15);
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
 
     .site-branding {
         a {
-            p {
-                margin: 0;
-                font-size: .8rem;
-                color: $color__bgmp-grey;
+            // p {
+            //     margin: 0;
+            //     font-size: .8rem;
+            //     color: $color__bgmp-grey;
 
-                @media (min-width: 768px) {
-                    font-size: 1rem;
-                }
+            //     @media (min-width: 768px) {
+            //         font-size: 1rem;
+            //     }
 
-            }
+            // }
             .site-title {
-                margin-bottom: -.7rem;
-                font-size: 2rem;
-                font-weight: 700;
-                font-family: $font__atma;
-                color: $color__bgmp-grey;
+                // margin-bottom: -.7rem;
+                // font-size: 2rem;
+                // font-weight: 700;
+                // font-family: $font__heading;
+                // color: $color__bgmp-blue;
+                img {
+                    max-width: 10rem;
+                }
 
                 @media (min-width: 768px) {
-                    margin-bottom: -1rem;
-                    font-size: 3rem;
+                    img {
+                        max-width: 15rem;
+                    }
+                    // margin-bottom: -1rem;
+                    // font-size: 3rem;
                 }
             }
-            &:hover {
-                text-decoration: none;
-                p {
-                    color: $color__bgmp-purple;
-                    transition: 0.3s;
-                }
-            }
+            // .site-description {
+            //     font-family: $font__warnes;
+            // }
+            // &:hover {
+            //     text-decoration: none;
+            //     p {
+            //         color: $color__bgmp-pink;
+            //         transition: 0.3s;
+            //     }
+            // }
         }
     }
 
@@ -55,15 +70,16 @@
 
             li {
                 a {
-                    color: $color__bgmp-purple;
+                    color: $color__bgmp-grey;
                     text-transform: uppercase;
+                    font-family: $font__heading;
                     font-weight: 700;
-                    font-size: 1.1rem;
+                    // font-size: 1.1rem;
                     letter-spacing: 1px;
                     border-bottom: 3px solid transparent;
 
                     &:hover {
-                        border-bottom-color: $color__bgmp-purple;
+                        border-bottom-color: $color__bgmp-pink;
                         transition: 0.3s;
                     }
                 }
@@ -85,7 +101,7 @@
                 height: 100vh;
                 position: absolute;
                 left: 0;
-                top: 12vh;
+                top: 10vh;
                 text-align: center;
                 background: $color__bgmp-blue;
 
@@ -110,17 +126,23 @@
 
         .site-branding {
             a {
-                p {
-                    font-size: .7rem;
-                    @media (min-width: 768px) {
-                        font-size: .8rem;
-                    }
-                }
+                // p {
+                //     font-size: .7rem;
+                //     @media (min-width: 768px) {
+                //         font-size: .8rem;
+                //     }
+                // }
                 .site-title {
-                    font-size: 1.7rem;
-                    margin-bottom: -.7rem;
+                    img {
+                        max-height: 3.5rem;
+                    }
+                    // font-size: 1.7rem;
+                    // margin-bottom: -.7rem;
                     @media (min-width: 768px) {
-                        font-size: 2rem;
+                        img {
+                            max-height: 4.3rem ;
+                        }
+                        // font-size: 2rem;
                     }
                 }
             }

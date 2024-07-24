@@ -20,18 +20,28 @@ $site_url = get_field('site', $post->ID)['url'];
 // Get all gallery images from post
 if(has_block( 'gallery', $post->post_content )) {
 	$post_blocks = parse_blocks( $post->post_content );
-	foreach($post_blocks as $post_block) {
-		if($post_block["blockName"] === 'core/gallery') {
-			$ids = $post_block['attrs']['ids'];
+
+	foreach($post_blocks as $block) {
+		if($block["blockName"] === 'core/gallery') {
+			if(isset($block['attrs']['ids'])) {
+				$ids = $block['attrs']['ids'];
+			} else {
+				foreach($block['innerBlocks'] as $image) {
+					$ids[] = $image['attrs']['id'];
+				}
+			}
 		}
 	}
+	foreach ($ids as $id) {
+		$image_url = wp_get_attachment_image_src( $id, 'full' )[0];
+		$gallery[] = $image_url;
+	}
 } else {
-	$gallery = [get_the_post_thumbnail_url()];
+	$gallery[] = get_the_post_thumbnail_url();
 }
 
-foreach ($ids as $id) {
-	$image_url = wp_get_attachment_image_src( $id, 'full' )[0];
-	$gallery[] = $image_url;
+if(empty($gallery)) {
+	$gallery[] = get_the_post_thumbnail_url();
 }
 
 
@@ -75,6 +85,7 @@ get_header();
 						<div class="carousel-image" title="" data-fancybox="gallery" href="<?=$img?>" style="background-image: url('<?=$img?>'); "></div>
 					<?php endforeach; ?>
 				</div>
+				<small>Cliquez sur le carrousel pour une meilleure visualisation des images</small>
 			</div>
 		<?php endif; ?>
 
