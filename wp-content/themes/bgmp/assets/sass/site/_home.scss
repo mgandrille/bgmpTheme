@@ -16,9 +16,6 @@ section {
     &#contact {
         h2 {
             font-size: 4rem;
-            font-weight: 900;
-            color: $color__bgmp-pink;
-            margin: 2rem auto;
         }
     }
 
@@ -125,9 +122,13 @@ section {
 
     &#portfolio{
         .websites {
+            margin: 3rem auto;
             padding-bottom: 2rem;
-            .items {
-                @extend .portfolios_page ;
+            // .items {
+            //     @extend .portfolios_page ;
+            // }
+            .portfolios_page {
+                width: calc(100% / 3 - 1rem);
             }
         }
     }

@@ -72,7 +72,7 @@ get_header();
 
 			<?php if(!empty($site_name)) : ?>
 				<div class="link">
-					Envie de visiter le site ? C'est par ici :
+					Envie de visiter le site&nbsp;? C'est par ici&nbsp;:
 					<a href="<?=$site_url?>" target="_blank" rel="noopener noreferrer"><?= $site_name?></a>
 				</div>
 			<?php endif; ?>

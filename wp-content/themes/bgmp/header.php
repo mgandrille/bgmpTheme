@@ -40,15 +40,17 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<?php
 					the_custom_logo();
-					if ( is_front_page() && is_home() ) :
-						?>
-						<h1 class="site-title"><img src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo BGMP Développement Web"></h1>
-						<?php
-					else :
-						?>
-						<div class="site-title"><img src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo BGMP Développement Web"></div>
-						<?php
-					endif; ?>
+					if ( is_front_page() && is_home() ) : ?>
+						<h1 class="site-title">
+							<img class="logo" src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo BGMP Développement Web">
+							<img class="logo-small" src="<?= get_template_directory_uri().'/assets/img/logo-small.png' ?>" alt="Logo BGMP Développement Web">
+						</h1>
+					<?php else : ?>
+						<div class="site-title">
+							<img class="logo" src="<?= get_template_directory_uri().'/assets/img/logo.png' ?>" alt="Logo BGMP Développement Web">
+							<img class="logo-small" src="<?= get_template_directory_uri().'/assets/img/logo-small.png' ?>" alt="Logo BGMP Développement Web">
+						</div>
+					<?php endif; ?>
 					<?php /*$bgmp_description = get_bloginfo( 'description', 'display' );
 					if ( $bgmp_description || is_customize_preview() ) : ?>
 						<p class="site-description"><?php echo $bgmp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>

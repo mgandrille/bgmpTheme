@@ -36,6 +36,18 @@
                 // color: $color__bgmp-blue;
                 img {
                     max-width: 10rem;
+
+                    &.logo {
+                        position: relative;
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    &.logo-small {
+                        position: absolute;
+                        top: 0;
+                        opacity: 0;
+                    }
                 }
 
                 @media (min-width: 768px) {
@@ -135,6 +147,15 @@
                 .site-title {
                     img {
                         max-height: 3.5rem;
+
+                        &.logo {
+                            position: absolute;
+                            opacity: 0;
+                        }
+                        &.logo-small {
+                            position: relative;
+                            opacity: 1;
+                        }
                     }
                     // font-size: 1.7rem;
                     // margin-bottom: -.7rem;

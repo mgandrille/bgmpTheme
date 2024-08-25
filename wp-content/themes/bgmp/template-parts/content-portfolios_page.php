@@ -11,12 +11,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(['col-12', 'col-md-4']); ?>>
 	<a href="<?php the_permalink(); ?>">
+		<div class="card">
+			<?php the_post_thumbnail(); ?>
+			<div class="card-content">
+				<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+			</div>
+			<?php //var_dump($post->ID);?>
+		</div>
 
-		<?php the_post_thumbnail(); ?>
 
+		<?php /*
 		<div class="overlay">
 			<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 		</div><!-- .overlay -->
+		*/ ?>
 
 	</a>
 </article><!-- #post-<?php the_ID(); ?> -->

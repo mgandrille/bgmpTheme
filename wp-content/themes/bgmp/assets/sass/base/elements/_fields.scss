@@ -40,7 +40,7 @@ textarea {
 	background: none;
 	border: none !important;
 	border-radius: 0 !important;
-	border-bottom: 2px solid $color__bgmp-blue !important;
+	border-bottom: 2px solid $color__bgmp-green !important;
 
 	&:focus {
 		border: none;
@@ -56,8 +56,8 @@ textarea {
 
 .wpcf7-submit {
 	background: none !important;
-	border: 2px solid $color__bgmp-blue !important;
-	color: $color__bgmp-blue !important;
+	border: 2px solid $color__bgmp-green !important;
+	color: $color__bgmp-green !important;
 	text-transform: uppercase;
 	margin: 2rem auto;
 	padding: .5rem 3rem !important;
@@ -65,9 +65,9 @@ textarea {
 	transition: 0.6s;
 
 	&:hover {
-		background: $color__bgmp-purple !important;
+		background: $color__bgmp-green !important;
 		color: #FFF !important;
-		border-color: $color__bgmp-purple !important;
+		border-color: $color__bgmp-green !important;
 	}
 }
 

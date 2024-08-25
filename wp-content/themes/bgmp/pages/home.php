@@ -29,7 +29,7 @@ get_header();
 
         <section id="description">
             <div class="container">
-                <h2>Développeur web freelance à Lyon - création de sites Wordpress</h2>
+                <h2>Développeur web freelance à Lyon (France) - création de sites Wordpress</h2>
                 <p>
                     La conception d’un site web est une étape cruciale dans le développement d’une entreprise. Il sert 
                     de <b>vitrine numérique</b> pour votre marque, mettant en avant votre expertise, vos produits ou services. 
@@ -37,7 +37,7 @@ get_header();
                     êtes.</b>
                 </p>
                 <p>
-                    En tant que <b>développeuse web basée à Lyon</b>, je m’engage pleinement à créer des sites web 
+                    En tant que <b>développeuse web basée à Lyon</b> (en France), je m’engage pleinement à créer des sites web 
                     qui reflètent fidèlement <b>votre identité et vos valeurs</b>.
                 </p>
                 <p>
@@ -56,7 +56,7 @@ get_header();
             <div class="container">
                 <h2>Mon offre</h2>
                 <p>
-                    En tant que développeur web freelance, je propose une gamme complète de services pour répondre à 
+                    En tant que développeur web freelance en France, je propose une gamme complète de services pour répondre à 
                     vos besoins. Que vous ayez besoin d'un site vitrine pour présenter votre entreprise, ou d'une 
                     refonte de votre site existant, je suis là pour vous aider. Mes services incluent la conception 
                     de sites web, l'optimisation pour les moteurs de recherche, la maintenance et la mise à jour de 
@@ -85,14 +85,15 @@ get_header();
                 <div class="websites row">
                 <?php if ( $portfolios->have_posts() ) : ?>
                     <?php while ( $portfolios->have_posts() ) : $portfolios->the_post(); ?>
-                        <div class="items col-12 col-md-4">
+                        <?php get_template_part( 'template-parts/content', 'portfolios_page' ); ?>
+                        <?php /* <div class="items col-12 col-md-4">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail(); ?>
                                 <div class="overlay">
                                     <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
                                 </div><!-- .overlay -->
                             </a>
-                        </div>
+                        </div> */ ?>
                     <?php endwhile;
                     wp_reset_postdata(); ?>
                 <?php else:  ?>
